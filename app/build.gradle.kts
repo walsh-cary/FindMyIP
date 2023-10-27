@@ -51,6 +51,8 @@ android {
 
 dependencies {
 
+    implementation(files("\\lib\\app-debug.aar"))
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.8.0")
@@ -58,9 +60,9 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
+
     implementation("androidx.compose.material3:material3")
-    implementation(files("C:\\Users\\walsh\\StudioProjects\\FindMyIP3\\app\\build\\outputs\\aar\\app-release.aar"))
-    implementation(files("C:\\Users\\walsh\\StudioProjects\\FindMyIP3\\app\\build\\outputs\\aar\\app-release.aar"))
+
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -72,8 +74,6 @@ dependencies {
     testImplementation("org.mockito:mockito-core:3.11.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
 
-    //ksp
-    implementation("com.google.devtools.ksp:symbol-processing-api:1.9.10-1.0.13")
 
     //Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -84,7 +84,4 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
 
-    //Viewmodel
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-alpha03")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0-alpha03")
 }
