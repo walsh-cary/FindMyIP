@@ -15,11 +15,6 @@ import org.mockito.Mockito.`when`
 import org.mockito.MockitoAnnotations
 import retrofit2.Response
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class FindMyIPTest {
     @Mock
     private lateinit var api: NetworkRequest

@@ -14,14 +14,14 @@ class MainActivity : ComponentActivity() {
     private val repository: IRepository by lazy {
         IPFetcherRepository()
     }
-    private val viewmodel: IPFetcherViewModel by viewModels {
+    private val viewModel: IPFetcherViewModel by viewModels {
         IPFetcherViewModelFactory(repository)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent { 
-            DisplayIPDetails(viewModel = viewmodel)
+            DisplayIPDetails(viewModel = viewModel)
         }
     }
 }
